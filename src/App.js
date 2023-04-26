@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Stackmain from './components/stackmain';
+import Header from './components/header'
+import { BrowserRouter as Router,Route,Switch ,Redirect} from'react-router-dom';
+import AddQuestion from './components/AddQuestion';
+import ViewQns from './components/ViewQuestion';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Header/> 
+
+        <Switch>
+        <Route  exact path='/' component={Stackmain}/>
+        <Route   path='/add-question' component={AddQuestion}/>
+        <Route   path='/question' component={ViewQns}/>
+        </Switch>
+      
+     
+      </Router>
+  
+ 
+   
+   
     </div>
   );
 }
