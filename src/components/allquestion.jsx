@@ -32,7 +32,7 @@ I want to create like this using createjs please help me. I can't find any examp
 This is the output I want. https://www.syncfusion.com/javascript-ui-controls/js-charts/chart-types/spline-area-chart</div>
                 </div>
             </div>
-            <div style={{display:"flex"}} >
+            <div style={{display:"flex",height:"60px" ,width:"auto", flexWrap:"wrap"}} >
                  <span className='question-tags'>React</span>
                  <span className='question-tags'>Antd</span>
                  <span className='question-tags'>Create js</span>
